@@ -6,6 +6,7 @@
   "bs-dependencies": ["reason-react"],
   "bsc-flags": ["-bs-super-errors"],
   "refmt": 3,
+  "namespace": true,
   "sources": [
     {
       "dir": "re"
