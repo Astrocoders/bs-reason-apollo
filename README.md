@@ -61,7 +61,7 @@ type response = Types.user;
 Now in your actually component:
 
 ```reason
-open BsReasonpollo;
+open BsReasonApollo;
 
 module SignInQueryWrapper = ReactApollo.CreateWrapper(SignInQueryGql);
 
@@ -113,7 +113,7 @@ Define the mutation module:
 
 ```reason
 /* re/SignInMutationGql.re */
-open BsReasonpollo;
+open BsReasonApollo;
 
 let query = GraphQLTag.gql({|
   mutation SignInQuery($input: SignInInput!) {
@@ -137,7 +137,7 @@ type response = {. "signIn": Types.signIn};
 ```
 
 ```reason
-open BsReasonpollo;
+open BsReasonApollo;
 
 /* Mutation wrapper */
 module SignInMutationWrapper = ReactApollo.CreateMutationWrapper(SignInQueryGql);
