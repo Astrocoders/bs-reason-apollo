@@ -26,6 +26,8 @@ So now to use it in Apollo create a query definition module for you query:
 
 ```reason
 /* re/SignInQueryGql.re */
+open BsReasonApollo;
+
 let query = GraphQLTag.gql({|
   query SignInQuery {
     currentUser {
