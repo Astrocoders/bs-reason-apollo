@@ -84,7 +84,7 @@ module CreateMutationWrapper =
           "fetchPolicy": "network",
           "refetchQueries":
             props##refetchQueries
-            |> Utils.accessOptional(Array.of_list)
+            |> mapOptional(Array.of_list)
             |> Js.Null_undefined.from_opt
         }
       },
