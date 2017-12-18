@@ -5,6 +5,11 @@ let mapOptional = (mapper, optional) => switch(optional) {
   | Some(value) => Some(mapper(value))
 };
 
+let mapOptional = (mapper, optional) => switch(optional) {
+  | None => None
+  | Some(value) => Some(mapper(value))
+};
+
 module type Query = {type data; type variables; let query: GraphQLTag.definitions;};
 
 module CreateWrapper = (Query: Query) => {
