@@ -53,7 +53,7 @@ type response = Types.user;
 
 Now in your actually component:
 
-```
+```reason
 open BsReactApollo;
 
 module SignInQueryWrapper = ReactApollo.CreateWrapper(SignInQueryGql);
