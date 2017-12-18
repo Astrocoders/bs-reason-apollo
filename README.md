@@ -15,6 +15,11 @@ Setup the same way you would do for React Apollo and just plug it in.
 yarn add bs-reason-apollo
 ```
 
+Update your bs-config.json
+```js
+  "bs-dependencies": ["reason-react", "bs-reform", "bs-reason-apollo"],
+```
+
 ## ReactApollo.CreateWrapper
 As you have your ApolloProvider somewhere in the top of your React JS tree you are already covered there.
 So now to use it in Apollo create a query definition module for you query:
