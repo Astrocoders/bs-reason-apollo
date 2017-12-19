@@ -1,12 +1,12 @@
 # bs-reason-apollo
 [![Build Status](https://travis-ci.org/Astrocoders/bs-reason-apollo.svg?branch=master)](https://travis-ci.org/Astrocoders/bs-reason-apollo)
 
-Initially inspired in https://github.com/FormidableLabs/seattlejsconf-app/blob/master/re/types/ReactApollo.re
+Initially inspired by https://github.com/FormidableLabs/seattlejsconf-app/blob/master/re/types/ReactApollo.re
 But now with a more sugared usage with function as child.
 
 
 ## Difference from reason-apollo official
-This allows you to use an React Apollo Client that you already have in JS so you can gradually change to Reason.
+This allows you to use a React Apollo Client that you already have in JS so you can gradually change to Reason.
 Setup the same way you would do for React Apollo and just plug it in.
 
 ## Install
@@ -22,7 +22,7 @@ Update your bs-config.json
 
 ## ReactApollo.CreateWrapper
 As you have your ApolloProvider somewhere in the top of your React JS tree you are already covered there.
-So now to use it in Apollo create a query definition module for you query:
+So now to use it with Apollo create a query definition module for you query:
 
 ```reason
 /* re/SignInQueryGql.re */
@@ -191,7 +191,7 @@ let enhanced = (mapper) => {
   </SignInMutationWrapper>
 };
 
-let component = 
+let component =
 ```
 
 ## Demo
