@@ -4,6 +4,15 @@
   "description": "Boilerplate for BuckleScript NPM package",
   "main": "lib/js/re/root.js",
   "repository": "git@github.com:Astrocoders/bs-reason-apollo.git",
+	"homepage": "https://github.com/Astrocoders/bs-reason-apollo#readme",
+	"bugs": "https://github.com/Astrocoders/bs-reason-apollo/issues",
+	"keywords": [
+		"reason",
+		"bucklescript",
+		"apollo",
+		"graphql",
+    "react"
+	],
   "author": "Gabriel R. Abreu <grsabreu@gmail.com>",
   "license": "MIT",
   "dependencies": {},
