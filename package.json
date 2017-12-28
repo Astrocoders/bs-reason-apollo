@@ -1,7 +1,7 @@
 {
   "name": "bs-reason-apollo",
   "version": "1.0.0-beta.3",
-  "description": "Boilerplate for BuckleScript NPM package",
+  "description": "React Apollo bindings for BS",
   "main": "lib/js/re/root.js",
   "repository": "git@github.com:Astrocoders/bs-reason-apollo.git",
   "homepage": "https://github.com/Astrocoders/bs-reason-apollo#readme",
