@@ -39,7 +39,7 @@ module CreateWrapper = (Query: Query) => {
       },
       jsComponent
     );
-  let make = (~variables=?, children: children) =>
+  let make = (~variables: option(Query.variables)=?, children: children) =>
     ReasonReact.wrapJsForReason(~reactClass=enhanced, ~props={"variables": variables}, children);
 };
 
