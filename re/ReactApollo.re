@@ -53,7 +53,7 @@ module CreateMutationWrapper =
   };
   [@bs.module "react-apollo"] external graphql : (GraphQLTag.definitions, options) => hoc =
     "graphql";
-  type jsMutationArgs = {. "variables": {. "input": Query.input}};
+  type jsMutationArgs = {. "variables": Query.input};
   type mutate = Query.input => Js.Promise.t(Query.response);
   type children  = (~mutate: mutate) => ReasonReact.reactElement;
   type props = {
@@ -70,7 +70,7 @@ module CreateMutationWrapper =
         let mutate = (variables: Query.input) => {
           let mutate' = props##mutate;
           Js.Promise.(
-            mutate'({"variables": {"input": variables}}) |> then_((data) => data##data |> resolve)
+            mutate'({"variables": variables}) |> then_((data) => data##data |> resolve)
           )
         };
         make'(~mutate, props##children)
