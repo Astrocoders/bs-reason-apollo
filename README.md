@@ -1,13 +1,13 @@
+# Deprecated
 # bs-reason-apollo
 [![Build Status](https://travis-ci.org/Astrocoders/bs-reason-apollo.svg?branch=master)](https://travis-ci.org/Astrocoders/bs-reason-apollo)
 
 Initially inspired by https://github.com/FormidableLabs/seattlejsconf-app/blob/master/re/types/ReactApollo.re
 But now with a more sugared usage with function as child.
 
+## Why it got deprecated?
 
-## Difference from reason-apollo official
-This allows you to use a React Apollo Client that you already have in JS so you can gradually change to Reason.
-Setup the same way you would do for React Apollo and just plug it in.
+The only reason we built this in the first place was because we needed a way to make the transition with the current Apollo setup we had. Now the official [Reason Apollo bindings](https://github.com/apollographql/reason-apollo) allows you to use any Apollo client instance from React context.
 
 ## Install
 
